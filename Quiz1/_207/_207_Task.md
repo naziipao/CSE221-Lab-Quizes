@@ -1,0 +1,85 @@
+# Task
+Given a list of N integers A[i], and another list of M integers B[i], and
+another list of L integers C[i], all three sorted in non-decreasing order,
+find the K'th smallest integer among all the N+M+L integers.
+
+# Input
+First line contains the number of tests. The description of each test follows.
+Each test is described by four lines. First line contains N, M, L and K.
+Second line contains the integers A[i]. Third line contains the integers B[i].
+Forth line contains the integers C[i].
+
+# Output
+For each test in the given order, print one integer in one line, the answer you
+are asked in this task.
+
+# Example-1 (batch-1)
+## Input (stdin)
+```
+2
+3 6 2 8
+2 10 12
+3 4 6 7 8 9
+11 12
+4 4 2 5
+1 3 5 7
+2 2 4 8
+5 5
+```
+## Output (stdout)
+```
+10
+4
+```
+
+# Example-2 (batch-2)
+## Input (stdin)
+```
+2
+7 9 4 15
+2 3 8 8 10 12 14
+1 1 4 5 6 8 13 15 16
+15 15 16 16
+4 1 5 2
+1 2 3 4
+10
+2 2 2 2 2
+```
+## Output (stdout)
+```
+15
+2
+```
+
+# Forbidden words
+```
+sort
+open
+file
+creat(
+fstream
+thread
+process
+system(
+exec(
+```
+
+# Scoring distribution
+```
+Batch   Score   Tests   Constraints
+1       0.1     2       1<=N, 1<=M, 1<=L, 1<=K<=N+M+L<=20, 1<=max(A[i],B[i],C[i])<=20
+2       0.1     2       1<=N, 1<=M, 1<=L, 1<=K<=N+M+L<=20, 1<=max(A[i],B[i],C[i])<=20
+3       0.2     5000    1<=N, 1<=M, 1<=L, 1<=K<=N+M+L<=20, 1<=max(A[i],B[i],C[i])<=1000
+4       0.3     50      1<=N, 1<=M, 1<=L, 1<=K<=N+M+L<=2000, 1<=max(A[i],B[i],C[i])<=1000000
+5       0.3     5       1<=N, 1<=M, 1<=L, 1<=K<=N+M+L<=200000, 1<=max(A[i],B[i],C[i])<=1000000000
+------------------------
+5       1       Total
+```
+
+# Time limit
+1s (cpp) or 1.5s (java) or 3s (py) per batch.
+
+# Hints
+- Use fast input/output methods.
+- 0.2 score for passing only sample batches.
+- O(N+M+L) solution is expected.
